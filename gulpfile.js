@@ -2,14 +2,23 @@
  * Created by granevich on 06.05.2016.
  */
 var gulp = require('gulp'),
-browserSync = require('browser-sync'),
-sass = require('gulp-sass');
+    browserSync = require('browser-sync'),
+    sass = require('gulp-sass'),
+    mainBowerFiles = require('main-bower-files'),
+    autoprefixer = require('gulp-autoprefixer'),
+    csscomb = require('gulp-csscomb');
+  
 
-
+gulp.task('mainBowerFiles', function () {
+   return gulp.src(mainBowerFiles())
+       .pipe(gulp.dest('bower_components'))
+});
 
 gulp.task('sass', function () {
     return gulp.src('app/sass/*.scss')
         .pipe(sass())
+        .pipe(autoprefixer(['last 15 versions',  'ie 8', 'ie 7'],{cascade:true}))
+        .pipe(csscomb())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream:true}))
 });
