@@ -4,7 +4,7 @@
 var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass'),
-    mainBowerFiles = require('main-bower-files'),
+
     autoprefixer = require('gulp-autoprefixer'),
     csscomb = require('gulp-csscomb');
     //     sass        = require('gulp-sass'),//переводит sass в css
@@ -22,10 +22,7 @@ var gulp = require('gulp'),
     // csscomb = require('gulp-csscomb');//комбинирует красиво стили
   
 
-gulp.task('mainBowerFiles', function () {
-   return gulp.src(mainBowerFiles())
-       .pipe(gulp.dest('bower_components'))
-});
+
 
 gulp.task('sass', function () {
     return gulp.src('app/sass/*.scss')
