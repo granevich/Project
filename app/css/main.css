@@ -1,0 +1,574 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video
+{
+    font: inherit;
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline; 
+
+    border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    display: block;
+}
+
+body
+{
+    line-height: 1;
+}
+
+ol,
+ul
+{
+    list-style: none;
+}
+
+blockquote,
+q
+{
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+    content: none;
+}
+
+table
+{
+    border-spacing: 0; 
+    border-collapse: collapse;
+}
+
+@font-face
+{
+    font-family: 'GothamProRegular';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProRegular/GothamProRegular.eot');
+    src: url('../fonts/GothamProRegular/GothamProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProRegular/GothamProRegular.woff') format('woff'), url('../fonts/GothamProRegular/GothamProRegular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProBold';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProBold/GothamProBold.eot');
+    src: url('../fonts/GothamProBold/GothamProBold.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProBold/GothamProBold.woff') format('woff'), url('../fonts/GothamProBold/GothamProBold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProBlack';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProBlack/GothamProBlack.eot');
+    src: url('../fonts/GothamProBlack/GothamProBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProBlack/GothamProBlack.woff') format('woff'), url('../fonts/GothamProBlack/GothamProBlack.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProItalic/GothamProItalic.eot');
+    src: url('../fonts/GothamProItalic/GothamProItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProItalic/GothamProItalic.woff') format('woff'), url('../fonts/GothamProItalic/GothamProItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProMedium';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProMedium/GothamProMedium.eot');
+    src: url('../fonts/GothamProMedium/GothamProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProMedium/GothamProMedium.woff') format('woff'), url('../fonts/GothamProMedium/GothamProMedium.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProLight';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProLight/GothamProLight.eot');
+    src: url('../fonts/GothamProLight/GothamProLight.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProLight/GothamProLight.woff') format('woff'), url('../fonts/GothamProLight/GothamProLight.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProMediumItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProMediumItalic/GothamProMediumItalic.eot');
+    src: url('../fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProMediumItalic/GothamProMediumItalic.woff') format('woff'), url('../fonts/GothamProMediumItalic/GothamProMediumItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProLightItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProLightItalic/GothamProLightItalic.eot');
+    src: url('../fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProLightItalic/GothamProLightItalic.woff') format('woff'), url('../fonts/GothamProLightItalic/GothamProLightItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProBoldItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProBoldItalic/GothamProBoldItalic.eot');
+    src: url('../fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProBoldItalic/GothamProBoldItalic.woff') format('woff'), url('../fonts/GothamProBoldItalic/GothamProBoldItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProBlackItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProBlackItalic/GothamProBlackItalic.eot');
+    src: url('../fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProBlackItalic/GothamProBlackItalic.woff') format('woff'), url('../fonts/GothamProBlackItalic/GothamProBlackItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProRegular';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProRegular/GothamProRegular.eot');
+    src: url('../fonts/GothamProRegular/GothamProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProRegular/GothamProRegular.woff') format('woff'), url('../fonts/GothamProRegular/GothamProRegular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProBold';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProBold/GothamProBold.eot');
+    src: url('../fonts/GothamProBold/GothamProBold.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProBold/GothamProBold.woff') format('woff'), url('../fonts/GothamProBold/GothamProBold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProBlack';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProBlack/GothamProBlack.eot');
+    src: url('../fonts/GothamProBlack/GothamProBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProBlack/GothamProBlack.woff') format('woff'), url('../fonts/GothamProBlack/GothamProBlack.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProItalic/GothamProItalic.eot');
+    src: url('../fonts/GothamProItalic/GothamProItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProItalic/GothamProItalic.woff') format('woff'), url('../fonts/GothamProItalic/GothamProItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProMedium';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProMedium/GothamProMedium.eot');
+    src: url('../fonts/GothamProMedium/GothamProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProMedium/GothamProMedium.woff') format('woff'), url('../fonts/GothamProMedium/GothamProMedium.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProLight';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProLight/GothamProLight.eot');
+    src: url('../fonts/GothamProLight/GothamProLight.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProLight/GothamProLight.woff') format('woff'), url('../fonts/GothamProLight/GothamProLight.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProMediumItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProMediumItalic/GothamProMediumItalic.eot');
+    src: url('../fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProMediumItalic/GothamProMediumItalic.woff') format('woff'), url('../fonts/GothamProMediumItalic/GothamProMediumItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProLightItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProLightItalic/GothamProLightItalic.eot');
+    src: url('../fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProLightItalic/GothamProLightItalic.woff') format('woff'), url('../fonts/GothamProLightItalic/GothamProLightItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProBoldItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProBoldItalic/GothamProBoldItalic.eot');
+    src: url('../fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProBoldItalic/GothamProBoldItalic.woff') format('woff'), url('../fonts/GothamProBoldItalic/GothamProBoldItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'GothamProBlackItalic';
+    font-weight: normal; 
+    font-style: normal;
+
+    src: url('../fonts/GothamProBlackItalic/GothamProBlackItalic.eot');
+    src: url('../fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamProBlackItalic/GothamProBlackItalic.woff') format('woff'), url('../fonts/GothamProBlackItalic/GothamProBlackItalic.ttf') format('truetype');
+}
+
+.phone-header
+{
+    display: none;
+
+    width: 100%;
+    height: 80px;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.phone-header .open
+{
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 1023px)
+{
+    .phone-header .open
+    {
+        font-size: 20px;
+
+        position: absolute;
+        top: 32px;
+        left: 20px;
+
+        display: block;
+
+        cursor: pointer;
+    }
+}
+
+.header-panel
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 1280px;
+    height: 80px; 
+    margin: auto;
+    padding: 0 50px;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+@media (min-width: 1024px) and (max-width: 1279px)
+{
+    .header-panel
+    {
+        width: 1024px; 
+        padding: 0 40px;
+    }
+}
+@media (min-width: 320px) and (max-width: 1023px)
+{
+    .header-panel
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100vh;
+        padding: 35px 0; 
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+                align-items: center;
+    }
+}
+
+.close
+{
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 1023px)
+{
+    .close
+    {
+        font-size: 17px;
+
+        position: absolute;
+        top: 50px;
+        right: 20px;
+
+        display: block;
+
+        cursor: pointer;
+    }
+}
+
+div.logo
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 240px;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 1023px)
+{
+    div.logo img
+    {
+        display: none;
+    }
+}
+div.logo span
+{
+    font-family: 'GothamPro', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.778; 
+
+    text-transform: uppercase;
+
+    color: #646464;
+}
+@media (min-width: 320px) and (max-width: 1023px)
+{
+    div.logo span
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+nav
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+nav ul
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 1023px)
+{
+    nav ul
+    {
+        height: auto;
+        margin-top: 100px; 
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+            -ms-flex-flow: column;
+                flex-flow: column;
+    }
+}
+@media (min-width: 320px) and (max-width: 1023px)
+{
+    nav ul li
+    {
+        margin-bottom: 40px;
+    }
+}
+nav ul li a
+{
+    font-family: 'GothamPro', sans-serif;
+    font-size: 14px;
+
+    margin-right: 25px;
+
+    text-decoration: none; 
+    text-transform: uppercase;
+
+    color: #646464;
+}
+@media (min-width: 320px) and (max-width: 1023px)
+{
+    nav ul li a
+    {
+        margin: 0;
+    }
+}
+nav ul li a:hover
+{
+    color: #545ad8;
+}
+
+*
+{
+    -webkit-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+}

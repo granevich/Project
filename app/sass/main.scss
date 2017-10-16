@@ -1,4 +1,9 @@
-@import "normalize";
+@import "reset";
+@import "varibles";
+@import "responsive_mixin";
+@import "fonts";
+@import "header";
+@import "bigslider";
 
 *{
    box-sizing: border-box !important;

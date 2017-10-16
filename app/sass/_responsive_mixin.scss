@@ -1,6 +1,4 @@
-$tablet-width: 768px;
-$desktop-width: 1024px;
-$phone-width:500px;
+@import "varibles";
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
